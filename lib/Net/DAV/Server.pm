@@ -636,10 +636,8 @@ Leon Brocard <acme@astray.com>
   Bron Gondwana <perlcode@brong.net> ( current maintainer )
   Leon Brocard <acme@astray.com>     ( original author )
 
-The latest copy of this package can be checked out using Subversion
-from http://svn.brong.net/netdavserver/release
-
-Development code at http://svn.brong.net/netdavserver/trunk
+The latest copy of this package can be checked out using git
+from http://github.com/brong/netdavserver/
 
 
 =head1 COPYRIGHT

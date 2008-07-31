@@ -39,6 +39,13 @@ DESCRIPTION
 AUTHOR
     Leon Brocard <acme@astray.com>
 
+MAINTAINERS
+      Bron Gondwana <perlcode@brong.net> ( current maintainer )
+      Leon Brocard <acme@astray.com>     ( original author )
+
+    The latest copy of this package can be checked out using git from
+    http://github.com/brong/netdavserver/
+
 COPYRIGHT
     Copyright (C) 2004, Leon Brocard
 
