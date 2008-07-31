@@ -1,0 +1,25 @@
+---
+name: Net-DAV-Server
+version: 1.29
+author:
+  - Leon Brocard <acme@astray.com>
+abstract: Provide a DAV Server
+license: perl
+requires:
+  Class::Accessor::Fast: 0
+  Encode: 0
+  File::Find::Rule::Filesys::Virtual: 0
+  File::Slurp: 0
+  HTTP::Date: 0
+  HTTP::Headers: 0
+  HTTP::Request: 0
+  HTTP::Response: 0
+  Test::More: 0
+  URI: 0
+  URI::Escape: 0
+  XML::LibXML: 0
+provides:
+  Net::DAV::Server:
+    file: lib/Net/DAV/Server.pm
+    version: 1.29
+generated_by: Module::Build version 0.26

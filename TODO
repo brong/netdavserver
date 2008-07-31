@@ -1,0 +1,11 @@
+This is a list of features which have been implemented in
+FastMail.FM's DAV implementation that I intend to backport to
+Net::DAV::Server.  -- Bron.
+
+* Apache mod_perl integration
+* Attribute storage support (plugin)
+* Lock support (plugin)
+* Authentication support (plugin)
+* Avoid buffering entire files in memory
+* Full litmus test complience
+* Quota/"disk free" support (both Mac 512byte and standards complient)

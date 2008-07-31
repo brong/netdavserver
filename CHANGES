@@ -1,0 +1,57 @@
+CHANGES file for Net::DAV::Server
+
+1.29 Wed Jul 19 11:42:56 EST 2006
+  - Bugfix: RT#17077 - uninitialised variable.  
+    -- Thanks to CLOTHO
+  - Bugfixes/interoperability:
+    * RT#20022 - add trailing slashes to directory names in listing.
+    * RT#20016 - remove upwards path from directory listing.
+    -- Both thanks to HACHI
+  - Test infrastructure (requires litmus installed) to ensure
+    new changes don't cause regressions.
+  - Add 'TODO' list to remind myself of other work I want to do. 
+
+1.28 Sat Jul  9 00:08:24 EST 2005
+  - new maintainer: Bron Gondwana <brong@brong.net>
+  - fix DAV: namespace in propfind
+  - use ISO time format for DAV::creationdate property
+
+1.27 Wed Jun  8 10:33:44 BST 2005
+  - advertise that locking is available to get Windows DAV happier
+    (thanks to Stefan `Sec` Zehl)
+
+1.26 Tue Apr 26 22:03:33 BST 2005
+  - removed webdav.pl (spotted by CDOLAN)
+
+1.25 Sat Mar 26 07:06:03 CST 2005
+  - finished the support for parsing PROPFIND request bodies - for
+    retreiving property names, named properties, or all properties.
+  - tweaked some things to support publishing DAV using
+    POE::Component::Server::HTTP (bug #11821)
+  - a little more magic to make wide character file names work
+  - all above patches by Jack/ms419
+  - added POD test
+
+1.24 Tue Mar  8 18:58:05 EST 2005
+  - included big patch from Mark A. Hershberger, so that
+    Net::DAV::Server passes more litmus tests
+  - remove silly line that stopped cadaver from working
+  - return 201 if moving to a new directory
+  - return 409 if writing to a directory which does not exist
+
+1.23 Thu May 20 10:06:05 BST 2004
+  - implemented recursive copy, delete, move using
+    File::Find::Rule::Filesys::Virtual
+  - 403 on more things we don't support
+
+1.22 Wed May 19 14:04:47 BST 2004
+  - give a 404 on unknown error (thanks to Yair Lenga)
+  - add Last-Modified upon GETs (thanks to Yair Lenga)
+  - remove DateTime dependency  (thanks to Yair Lenga) 
+  - fix URI encoding problems
+  - give proper Server: header
+  - use XML::LibXML to generate proper XML
+  - refactoring
+
+1.21 Sun May  9 10:16:31 IST 2004
+  - first release
